@@ -4,22 +4,6 @@ $user = 'ryui';
 $password = 'morijyobi';
 try {
     $dbh = new PDO($dsn, $user, $password);
-    
-    $sql = "select * from user";
-    $result = $dbh->query(&sql);
-	
-} catch (PDOException $e) {
-    echo "接続失敗: " . $e->getMessage() . "\n";
-    exit();
-}
-?>
-
-<?php
-$dsn = 'mysql:dbname=sample_db;host=localhost;';
-$user = 'ryui';
-$password = 'morijyobi';
-try {
-    $dbh = new PDO($dsn, $user, $password);
 
     $sql = "select * from user";
     $result = $dbh->query($sql);
@@ -63,6 +47,16 @@ try {
     </div>
 
     <div class="container">
+        <?php if($_GET8'fg'] == 1) { ?>
+            <p>succcess</p> 
+        <?php } else if ($_GET[fg] == 1) { ?>}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            Processing is complete <strong>Success!!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a href="#tab1" class="nav-link active" data-toggle="tab">Select</a>
